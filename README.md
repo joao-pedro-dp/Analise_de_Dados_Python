@@ -7,29 +7,34 @@ Este repositório contém uma aplicação interativa desenvolvida com Streamlit 
 A aplicação responde às seguintes perguntas e exibe os resultados em gráficos interativos:
 
 Anime mais bem avaliado: Exibe o anime com a maior avaliação de todos os tempos.
+
 Quantidade de animes por ano: Mostra a quantidade de animes lançados por ano.
+
 Gênero mais frequente: Indica qual gênero de anime é mais comum na base de dados.
+
 Top 5 animes com maior número de episódios: Apresenta os cinco animes com o maior número de episódios.
+
 Média de avaliação por gênero: Exibe a média de avaliação para cada gênero de anime.
+
 Estúdios que mais produziram animes: Mostra os cinco estúdios de anime que mais produziram.
+
 Relação entre avaliação e número de episódios: Compara a avaliação e o número de episódios dos animes.
+
 Animes mais populares por década: Mostra a quantidade de animes lançados por década.
 
 # Bibliotecas Utilizadas
 
 Streamlit: Framework para construir a interface interativa.
+
 Pandas: Biblioteca para manipulação e análise de dados.
+
 Plotly: Biblioteca para a criação de gráficos interativos.
+
 Kaggle Hub: Para download do dataset utilizado.
 
-# Pré-requisitos
-Antes de rodar o projeto, você precisa ter as seguintes dependências instaladas:
 
-Python 3
-Streamlit
-Pandas
-Plotly
-KaggleHub 
+# Pré-requisitos
+Antes de rodar o projeto, você precisa ter as dependências instaladas:
 
 Você pode instalar essas dependências utilizando o pip:
 
@@ -59,7 +64,9 @@ Exibição no Streamlit: O layout é organizado em colunas no Streamlit, onde gr
 # Exemplo de Tela
 
 A interface do usuário é dividida da seguinte maneira:
+
 Sidebar: Exibe informações do anime mais bem avaliado e o gênero mais frequente, além de filtros para selecionar o ano e a temporada.
+
 Gráficos: A área principal exibe os gráficos interativos para cada uma das perguntas.
 
 # Contribuindo
