@@ -2,6 +2,10 @@
 
 Este repositório contém uma aplicação interativa desenvolvida com Streamlit para analisar e visualizar dados de animes extraídos do MyAnimeList. Utilizando um conjunto de dados que abrange animes lançados de 1917 até 2024, a aplicação permite a exploração de várias informações interessantes sobre os animes, como avaliações, gêneros, estúdios de produção, número de episódios e tendências ao longo do tempo.
 
+# Site Para Visualização do Dashboard
+
+                https://primeirodashempythonjp.streamlit.app/
+
 # Funcionalidades
 
 A aplicação responde às seguintes perguntas e exibe os resultados em gráficos interativos:
