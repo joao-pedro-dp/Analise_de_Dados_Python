@@ -4,8 +4,8 @@ Este repositório contém uma aplicação interativa desenvolvida com Streamlit 
 
 # Site Para Visualização do Dashboard
 
-                https://primeirodashempythonjp.streamlit.app/
-
+[Dashboard]([http://www.exemplo.com](https://primeirodashempythonjp.streamlit.app/))
+                
 # Funcionalidades
 
 A aplicação responde às seguintes perguntas e exibe os resultados em gráficos interativos:
