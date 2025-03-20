@@ -1,74 +1,76 @@
-# Análise de Animes - MyAnimeList
-Este repositório contém uma aplicação interativa desenvolvida com Streamlit para analisar e visualizar dados de animes extraídos do MyAnimeList. Utilizando um conjunto de dados que abrange animes lançados de 1917 até 2024, a aplicação permite a exploração de várias informações interessantes sobre os animes, como avaliações, gêneros, estúdios de produção, número de episódios e tendências ao longo do tempo.
+# 🎌 Análise de Animes - MyAnimeList
+Este repositório contém uma aplicação interativa desenvolvida com Streamlit para analisar e visualizar dados de animes extraídos do MyAnimeList. A aplicação utiliza um conjunto de dados abrangendo animes lançados de 1917 a 2024, permitindo a exploração de diversas informações, como avaliações, gêneros, estúdios de produção, número de episódios e tendências ao longo do tempo.
 
-# Site Para Visualização do Dashboard
+# 🌐 Visualização do Dashboard
+🔗 Acesse o dashboard interativo clicando no link abaixo:
+
 [Dashboard](https://primeirodashempythonjp.streamlit.app/)
 
-                
-# Funcionalidades
-A aplicação responde às seguintes perguntas e exibe os resultados em gráficos interativos:
+## 📊 Funcionalidades
+A aplicação responde a várias perguntas e apresenta os resultados em gráficos interativos:
 
-Anime mais bem avaliado: Exibe o anime com a maior avaliação de todos os tempos.
+✅ Anime mais bem avaliado: Exibe o anime com a maior avaliação de todos os tempos.
 
-Quantidade de animes por ano: Mostra a quantidade de animes lançados por ano.
+✅ Quantidade de animes por ano: Mostra a evolução do número de animes lançados anualmente.
 
-Gênero mais frequente: Indica qual gênero de anime é mais comum na base de dados.
+✅ Gênero mais frequente: Identifica o gênero de anime mais comum no banco de dados.
 
-Top 5 animes com maior número de episódios: Apresenta os cinco animes com o maior número de episódios.
+✅ Top 5 animes com mais episódios: Apresenta os cinco animes com o maior número de episódios.
 
-Média de avaliação por gênero: Exibe a média de avaliação para cada gênero de anime.
+✅ Média de avaliação por gênero: Mostra a nota média de cada gênero.
 
-Estúdios que mais produziram animes: Mostra os cinco estúdios de anime que mais produziram.
+✅ Estúdios que mais produziram animes: Lista os cinco estúdios mais produtivos.
 
-Relação entre avaliação e número de episódios: Compara a avaliação e o número de episódios dos animes.
+✅ Relação entre avaliação e número de episódios: Analisa como a quantidade de episódios afeta a avaliação.
 
-Animes mais populares por década: Mostra a quantidade de animes lançados por década.
+✅ Animes mais populares por década: Exibe a quantidade de animes lançados em cada década.
 
-# Bibliotecas Utilizadas
-Streamlit: Framework para construir a interface interativa.
+## 📦 Bibliotecas Utilizadas
 
-Pandas: Biblioteca para manipulação e análise de dados.
+Streamlit → Construção da interface interativa
 
-Plotly: Biblioteca para a criação de gráficos interativos.
+Pandas → Manipulação e análise de dados
 
-Kaggle Hub: Para download do dataset utilizado.
+Plotly → Criação de gráficos interativos
+
+Kaggle Hub → Download do dataset automaticamente
+
+## ⚙️ Pré-requisitos
+
+                pip install -r requirements.txt
+
+## 🚀 Como Usar
+
+1️⃣ Baixar os dados → O conjunto de dados é baixado automaticamente pelo Kaggle Hub.
+
+2️⃣ Executar a aplicação → Após instalar as dependências, inicie o servidor Streamlit:
 
 
-# Pré-requisitos
-Antes de rodar o projeto, você precisa ter as dependências instaladas:
+streamlit run Animes.py
 
-Você pode instalar essas dependências utilizando o pip:
+🔹 Isso abrirá a aplicação automaticamente no seu navegador.
 
-        pip install streamlit pandas plotly kagglehub
+## 🛠️ Explicação do Código
+📌 Carregamento e Limpeza dos Dados → Importação e pré-processamento dos dados, removendo colunas irrelevantes e ajustando o ano de lançamento para análises mais coerentes.
 
-# Como Usar
-Baixar os dados: O conjunto de dados é baixado automaticamente através do KaggleHub. Não é necessário fazer o download manualmente, basta rodar a aplicação.
-Executar a aplicação: Após instalar as dependências, execute o comando a seguir para iniciar o servidor do Streamlit:
+📌 Filtragem dos Dados → Interface permite filtrar os animes por ano e temporada, facilitando análises específicas.
 
-        streamlit run Animes.py
+📌 Cálculo das Métricas → Funções como groupby(), nlargest() e value_counts() processam os dados para responder às perguntas propostas.
 
-Isso abrirá uma página interativa no seu navegador.
+📌 Gráficos Interativos → Criados com a biblioteca Plotly, permitindo uma experiência dinâmica e intuitiva.
 
-# Explicação do Código
-Carregamento e Limpeza dos Dados: O código começa importando e limpando o conjunto de dados. Removeram-se colunas irrelevantes, e a coluna de ano de lançamento foi transformada para garantir que as análises sejam feitas de forma coerente.
+📌 Exibição no Streamlit → O layout organiza os gráficos e informações em colunas para melhor visualização.
 
-Filtragem dos Dados: A interface permite filtrar os dados com base no ano de lançamento e na temporada. Isso facilita a análise de animes de períodos específicos.
+## 🤝 Contribuindo
 
-Respostas às Perguntas: Diversos métodos foram usados para calcular as respostas para as perguntas mencionadas, como groupby, nlargest e value_counts. Esses cálculos geram as informações para os gráficos.
+Achou algum bug ou quer sugerir melhorias? Sinta-se à vontade para contribuir!
 
-Gráficos Interativos: Cada pergunta tem um gráfico associado, que é gerado com a biblioteca Plotly. Esses gráficos são interativos, permitindo ao usuário explorar os dados de maneira intuitiva.
+Faça um fork do repositório.
 
-Exibição no Streamlit: O layout é organizado em colunas no Streamlit, onde gráficos e informações são apresentados.
+Implemente as melhorias.
 
-# Exemplo de Tela
-A interface do usuário é dividida da seguinte maneira:
+Envie um Pull Request para revisão.
 
-Sidebar: Exibe informações do anime mais bem avaliado e o gênero mais frequente, além de filtros para selecionar o ano e a temporada.
+## ✨ Autor
 
-Gráficos: A área principal exibe os gráficos interativos para cada uma das perguntas.
-
-# Contribuindo
-Se você encontrar algum problema ou quiser melhorar a aplicação, fique à vontade para fazer contribuições. Para isso, basta fazer um fork deste repositório e enviar um pull request.
-
-# Licença
-Este projeto está sob a licença MIT.
+Criado por João Pedro de Paula.
