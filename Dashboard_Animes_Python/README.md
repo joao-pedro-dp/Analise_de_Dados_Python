@@ -1,34 +1,37 @@
-# Repositório de Projetos de Análise de Dados
-## 📂 Estrutura do Repositório
-Este repositório contém diversos projetos de Análise de Dados, organizados em pastas individuais. Cada projeto possui um README com detalhes sobre sua implementação, fontes de dados utilizadas e insights extraídos.
+# 📊 Análise de Animes - MyAnimeList
+
+## 📌 Sobre o Projeto
+Este projeto realiza uma análise exploratória de um conjunto de dados de animes extraído do MyAnimeList. A análise responde a diversas perguntas sobre popularidade, avaliação, gêneros mais frequentes, estúdios mais produtivos, entre outras informações relevantes.
+
+## 🌐 Acesse aqui Dashboard: [Animes](https://dashanimesjp.streamlit.app/)
+
+## ⚙️ Como Funciona
+
+- Os dados são obtidos a partir do Kaggle e carregados utilizando Pandas.
+- Os dados são limpos e organizados para facilitar a análise.
+- São gerados gráficos interativos utilizando Streamlit e Plotly para visualização.
+- O usuário pode filtrar os animes por ano e temporada para personalizar a análise.
+- Diversas métricas são calculadas, como a média de avaliações por gênero e a relação entre número de episódios e notas.
 
 ## 🚀 Como Usar
 
 Clone o repositório para o seu ambiente local:
 
-        git clone https://github.com/seu-usuario/seu-repositorio.git
+    git clone https://github.com/seu-usuario/seu-repositorio.git
 
-Acesse o projeto desejado:
+Acesse o diretório do projeto:
 
-        cd nome-do-projeto
+    cd nome-do-projeto
 
-Consulte o README do projeto para instruções de instalação e execução.
+Instale as dependências listadas no arquivo `requirements.txt`:
 
-## 📌 Requisitos
+    pip install -r requirements.txt
 
-Cada projeto pode ter dependências específicas. Consulte o README correspondente para verificar os pacotes necessários antes da execução.
+Execute o aplicativo Streamlit:
 
-## 🤝 Contribuição
-
-Quer contribuir? Sinta-se à vontade para:
-
-Adicionar novos projetos.
-
-Melhorar análises e visualizações.
-
-Corrigir erros e otimizar códigos.
-
-Basta abrir um Pull Request para revisão!
+    streamlit run nome_do_arquivo.py
 
 ## ✨ Autor
+
 Criado por João Pedro de Paula.
+
