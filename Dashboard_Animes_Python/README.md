@@ -3,7 +3,7 @@
 ## 📌 Sobre o Projeto
 Este projeto realiza uma análise exploratória de um conjunto de dados de animes extraído do MyAnimeList. A análise responde a diversas perguntas sobre popularidade, avaliação, gêneros mais frequentes, estúdios mais produtivos, entre outras informações relevantes.
 
-## 🌐 Acesse aqui Dashboard: [Animes](https://dashanimesjp.streamlit.app/)
+## 🌐 Acesse o Dashboard: [Animes](https://dashanimesjp.streamlit.app/)
 
 ## ⚙️ Como Funciona
 
